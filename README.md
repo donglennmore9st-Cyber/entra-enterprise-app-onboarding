@@ -36,3 +36,52 @@ This confirms the full working chain:
 `App Registration → Service Principal → Certificate Credential → Application Permission → Admin Consent → AppOnly Authentication → Microsoft Graph Read`
 
 ![Verified AppOnly Microsoft Graph Read](10-apponly-graph-read-success.png)
+
+## Security Concepts Demonstrated
+
+- Workload identity
+- Microsoft Entra App Registration
+- Enterprise Application / Service Principal
+- Application permissions
+- Administrator consent
+- X.509 certificate-based authentication
+- AppOnly authentication
+- Least privilege
+- Microsoft Graph authorization
+- Functional access validation
+
+## SCIM Provisioning Assessment
+
+SCIM provisioning was assessed as part of the enterprise application onboarding workflow.
+
+The custom lab application did not provide a legitimate external SCIM endpoint or target SaaS environment. Because of this, hands-on SCIM provisioning was not performed.
+
+This limitation was documented rather than simulating or claiming unsupported provisioning activity.
+
+## Key Result
+
+Successfully configured and validated a Microsoft Entra workload identity using:
+
+- App Registration
+- Service Principal
+- Microsoft Graph `Application.Read.All`
+- Administrator consent
+- X.509 certificate credential
+- Certificate-based AppOnly authentication
+- Functional Microsoft Graph access
+
+The workload identity successfully retrieved Microsoft Entra application objects through Microsoft Graph.
+
+## Tools Used
+
+- Microsoft Entra ID
+- Microsoft Graph
+- Microsoft Graph PowerShell SDK
+- PowerShell 7
+- X.509 certificates
+
+## Portfolio Scope
+
+This project demonstrates hands-on enterprise application onboarding and workload identity validation.
+
+SCIM provisioning was assessed, but is not claimed as hands-on provisioning experience because a legitimate SCIM target environment was not available.
